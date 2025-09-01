@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>IDHU NAMMA OIL • Fresh & Pure Traditional Oils</title>
+<meta name="theme-color" content="#8B4513" />
+<style>
+  :root{
+    --bg1:#fff7e6; --bg2:#fde6c6; --primary:#8B4513; --accent:#d4a017; --leaf:#1e7f3b; --text:#2f241f;
+    --badge:#ffefc2; --rose:#bb2649;
+  }
+  /* Background */
+  body{
+    margin:0; font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+    color:var(--text);
+    background: radial-gradient(1200px 600px at 80% -10%, #fff, transparent),
+                linear-gradient(180deg,var(--bg1),var(--bg2));
+  }
+
+  /* Festive border */
+  .border-top{
+    height:14px; background:
+      repeating-linear-gradient(45deg, var(--accent) 0 16px, #f7cf63 16px 32px);
+    box-shadow: 0 2px 0 rgba(0,0,0,.08) inset;
+  }
+
+  header{
+    text-align:center; padding:28px 16px 18px; position:relative;
+  }
+  .garland{
+    width:100%; height:18px; background:
+      radial-gradient(circle at 10% 50%, #e74c3c 6px, transparent 7px),
+      radial-gradient(circle at 20% 50%, #27ae60 6px, transparent 7px),
+      radial-gradient(circle at 30% 50%, #f1c40f 6px, transparent 7px),
+      radial-gradient(circle at 40% 50%, #8e44ad 6px, transparent 7px),
+      radial-gradient(circle at 50% 50%, #e67e22 6px, transparent 7px),
+      radial-gradient(circle at 60% 50%, #16a085 6px, transparent 7px),
+      radial-gradient(circle at 70% 50%, #c0392b 6px, transparent 7px),
+      radial-gradient(circle at 80% 50%, #2980b9 6px, transparent 7px),
+      radial-gradient(circle at 90% 50%, #d35400 6px, transparent 7px);
+    background-size: 10% 100%; opacity:.9; margin:0 auto 8px; filter: drop-shadow(0 2px 0 rgba(0,0,0,.15));
+  }
+
+  h1{
+    margin:0; font-size:clamp(28px,6vw,44px); color:var(--primary);
+    letter-spacing:.5px; text-shadow:0 2px 0 rgba(212,160,23,.35);
+  }
+  .tagline{
+    margin:8px auto 0; font-weight:600; color:var(--rose);
+  }
+  .subtag{
+    margin:6px 0 0; color:#6b4b2f; font-style:italic;
+  }
+
+  .card{
+    max-width:920px; margin:16px auto; background:#fff; border-radius:16px;
+    box-shadow:0 10px 24px rgba(0,0,0,.10); padding:20px;
+    border:2px solid #f1d189;
+  }
+
+  .section-title{
+    text-align:center; margin:6px 0 14px; color:#7c2f10; font-size:clamp(18px,3.5vw,22px);
+    display:inline-block; border-bottom:3px solid var(--accent); padding-bottom:6px;
+  }
+
+  .products{
+    display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap:12px; margin:12px 0 6px;
+  }
+  .item{
+    background:var(--badge); border:1px solid #f1d189; border-left:8px solid var(--accent);
+    padding:14px; border-radius:12px; font-weight:700; position:relative;
+  }
+  .item small{ display:block; color:#6a574c; font-weight:600; margin-top:4px; }
+
+  .ribbon{
+    display:inline-block; background:linear-gradient(90deg,#f2c45c,#f8db8b);
+    color:#5c3a13; padding:8px 12px; border-radius:999px; font-weight:700;
+    box-shadow:0 6px 16px rgba(0,0,0,.12); margin:10px auto; text-align:center;
+  }
+
+  .badges{
+    display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-top:6px;
+  }
+  .badge{
+    background:#fff; border:2px dashed var(--leaf); color:var(--leaf); padding:8px 12px;
+    border-radius:999px; font-weight:700;
+  }
+
+  .cta{
+    text-align:center; margin:18px 0 6px;
+  }
+  .cta a{
+    display:inline-block; background:#25D366; color:#fff; text-decoration:none;
+    padding:14px 20px; border-radius:999px; font-weight:800; font-size:18px;
+    box-shadow:0 10px 20px rgba(37,211,102,.35);
+    transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+  }
+  .cta a:hover{ transform: translateY(-2px); background:#1EA955; box-shadow:0 12px 26px rgba(37,211,102,.45); }
+
+  .contact{
+    text-align:center; color:#5b4637; margin-top:8px; font-weight:600;
+  }
+  .contact a{ color:#5b4637; text-decoration:none; border-bottom:2px solid #d9b35a; }
+  footer{
+    text-align:center; padding:14px 10px; color:#6a4d3a; font-size:14px;
+  }
+
+  /* Subtle float animation for leaves */
+  .leaf{ display:inline-block; animation:float 3s ease-in-out infinite; }
+  .leaf:nth-child(2){ animation-delay:.5s }
+  .leaf:nth-child(3){ animation-delay:1s }
+  @keyframes float{
+    0%,100%{ transform:translateY(0) }
+    50%{ transform:translateY(-6px) }
+  }
+</style>
+</head>
+<body>
+
+<div class="border-top"></div>
+
+<header>
+  <div class="garland"></div>
+  <h1>🌿 IDHU NAMMA OIL 🌿</h1>
+  <div class="tagline">“Support Local Farmers, Taste The Tradition”</div>
+  <div class="subtag">“Not from a factory — from our family.”</div>
+  <div class="leaf" aria-hidden="true">🍃</div>
+  <div class="leaf" aria-hidden="true">🍃</div>
+  <div class="leaf" aria-hidden="true">🍃</div>
+</header>
+
+<main class="card">
+  <div style="text-align:center">
+    <span class="ribbon">Fresh &amp; Pure Traditional Oils Available!</span>
+  </div>
+
+  <h2 class="section-title">Our Oils • எங்கள் பாரம்பரிய எண்ணெய்கள்</h2>
+
+  <section class="products" aria-label="Product list">
+    <div class="item">Groundnut Oil <small>(கடலை எண்ணெய்)</small></div>
+    <div class="item">Gingelly / Sesame Oil <small>(நல்லெண்ணெய்)</small></div>
+    <div class="item">Castor Oil <small>(விளக்கெண்ணெய்)</small></div>
+  </section>
+
+  <div class="badges" aria-label="Quality notes">
+    <div class="badge">No Mixing</div>
+    <div class="badge">No Chemicals</div>
+    <div class="badge">Cold-pressed Feel</div>
+    <div class="badge">Farm Fresh</div>
+  </div>
+
+  <div class="cta">
+    <!-- WhatsApp: country code 91 + number (no + / spaces) -->
+    <a href="https://wa.me/918838072630?text=Hi%20IDHU%20NAMMA%20OIL%2C%20I%20want%20details%20and%20prices."
+       target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+  </div>
+  <p class="contact">
+    Price &amp; more details — Contact: <strong>Sathiyaraj Elaiyaperumal</strong><br>
+    📞 <a href="tel:+918838072630">+91 88380 72630</a> • 💬 <a href="https://wa.me/918838072630" target="_blank" rel="noopener">WhatsApp</a>
+  </p>
+</main>
+
+<footer>
+  © <span id="y"></span> IDHU NAMMA OIL • Pure • Traditional • Family Made
+</footer>
+
+<script>
+  // set current year (kept minimal; page still works without JS)
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
